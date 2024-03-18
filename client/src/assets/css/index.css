@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .button{
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+    .wrap-container{
+        @apply container bg-amber-100 mx-auto pb-5 sm:pb-10 h-[100vh];
+    }
+    .wrap{
+        @apply grid grid-cols-1 grid-rows-1 sm:gap-5 my-3  sm:my-10 max-w-[70%] w-[100%] mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7
+    }
+    .title{
+        @apply text-2xl sm:text-4xl text-center font-bold text-amber-300  bg-black py-5
+    }
+    .error{
+        @apply block text-center text-red-700 text-3xl
+    }
+    .cell{
+        @apply flex flex-col h-36 w-52 p-2 hover:scale-105 hover:border-2 transition border rounded-xl border-gray-500 overflow-hidden sm:h-44 md:w-40  xl:w-36
+    }
+    .done{
+        @apply line-through text-pink-500
+    }
+    .input{
+        @apply border-b  outline-0 px-1 w-full text-sm
+    }
+    .text-value{
+        @apply text-sm block border-b w-full
+    }
+    .btn-container{
+        @apply flex items-center flex-nowrap group-hover:opacity-100 opacity-0
+    }
+    .day{
+        @apply block text-center text-neutral-500 text-sm
+    }
+    .year{
+        @apply text-center font-bold text-3xl sm:text-4xl
+    }
+    .month{
+        @apply text-center font-bold text-2xl sm:text-3xl
+    }
+    .item{
+        @apply hover:font-bold hover:text-blue-700 w-[300px] max-w-full h-7
+    }
+
+}
+
